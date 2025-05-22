@@ -1,0 +1,80 @@
+.home-header {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+
+.sticky-heading-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+  padding: 20px 10px;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.sticky-heading {
+  font-size: 3rem;
+  color: #da7b0f;
+  margin: 0;
+}
+
+.sticky-subtitle {
+  font-size: 1.2rem;
+  color: #141010;
+  margin-top: 5px;
+}
+
+.sticky-heading-wrapper.hide {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.sticky-heading-wrapper.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+/* 
+
+.sticky-heading-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  padding: 20px 10px;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sticky-heading-wrapper.hide {
+  opacity: 0;
+  transform: translateY(50px);
+  pointer-events: none;
+}
+
+.sticky-heading {
+  font-size: 3rem;
+  color: #da7b0f;
+  margin: 0;
+}
+
+.sticky-subtitle {
+  font-size: 1.2rem;
+  color: #141010;
+  margin-top: 5px;
+} */
+
+.home-header-image {
+  height: 500px;
+  background-image: url('../../src/assets/images/Prallax.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  border-radius: 0;
+}

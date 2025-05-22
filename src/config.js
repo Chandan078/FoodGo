@@ -1,0 +1,1 @@
+export const BASE_URL = "https://foodgobackend-r61z.onrender.com";

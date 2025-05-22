@@ -1,0 +1,45 @@
+.Help {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.Help-Section {
+  margin-bottom: 40px;
+}
+
+.Help-Section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+.Help ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.Help li {
+  font-size: 16px;
+  margin-bottom: 8px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.Help li::before {
+  content: '📞';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.Help li:first-child::before {
+  content: '📧';
+}

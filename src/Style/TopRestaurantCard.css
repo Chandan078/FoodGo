@@ -1,0 +1,136 @@
+/* Restaurant Section */
+.restaurant-section {
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+  z-index: -1;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+/* Restaurant Card */
+.restaurant__card {
+  width: 250px;
+  height : auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45);
+}
+
+.restaurant__img {
+  width: 100%;
+  height: 160px;
+  position: relative;
+}
+
+.restaurant__img img {
+  width: 100%;
+  height: 100%;
+  /* padding 0px 10px; */
+  object-fit: cover;
+}
+
+.restaurant__img span {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #f95f28;
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+}
+
+.restaurant__content {
+  padding: 15px 15px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 6px; */
+}
+
+.restaurant__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+}
+
+.restaurant__title:hover {
+  color: #f95f28;
+}
+
+.restaurant__rating {
+  font-size: 1rem;
+  color: #ff7f50;
+  font-weight: 500;
+  display: flex;
+  margin : 0;
+  padding-left: 10px;
+  /* justify-content: center; */
+  align-items: center;
+  /* gap: 4px; */
+}
+
+.card__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.card__bottom h5 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.card__bottom span {
+  font-weight: 700;
+  color: #333;
+}
+
+/* Booking Button */
+.booking__btn {
+  margin-top: 10px;
+  background-color: #f95f28;
+  border: none;
+  padding: 8px 14px;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.booking__btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.booking__btn:hover {
+  background-color: #e65a20;
+}

@@ -1,0 +1,153 @@
+/* Wraps the entire testimonials section */
+.testimonial-wrapper {
+  padding: 0 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Contains the slider */
+.slider-container {
+  padding: 0 15px;
+}
+
+/* Section Title */
+.testimonial-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Individual testimonial card */
+.testimonial {
+  box-sizing: border-box;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  margin: 0 10px; /* spacing between slides */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+/* On hover, slightly elevate */
+.testimonial:hover {
+  transform: translateY(-12px);
+}
+
+/* Review text content */
+.review-text {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+/* Reviewer image and text */
+.reviewer-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+/* Avatar */
+.review-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  flex-shrink: 0;
+}
+
+/* Name & role */
+.reviewer-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #222;
+}
+
+.reviewer-role {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0;
+}
+
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .testimonial-wrapper {
+    padding: 0 20px;
+  }
+
+  .testimonial-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .review-text {
+    font-size: 0.95rem;
+  }
+
+  .review-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .reviewer-name {
+    font-size: 0.95rem;
+  }
+
+  .reviewer-role {
+    font-size: 0.85rem;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+  .testimonial-wrapper {
+    padding: 0 15px;
+  }
+
+  .testimonial {
+    padding: 1rem;
+    margin: 10px 0; /* stack vertically if needed */
+  }
+
+  .testimonial-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .review-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .review-img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .reviewer-name {
+    font-size: 0.9rem;
+  }
+
+  .reviewer-role {
+    font-size: 0.8rem;
+  }
+
+  .reviewer-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
